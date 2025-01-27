@@ -1,0 +1,83 @@
+#container{
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+#app-div{
+    border: 1px solid rgb(149, 167, 70);
+    width: 100%;
+    min-height: 800px;
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#left{
+    width: 100%;
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right{
+    width: 100%;
+    border: 1px solid yellow;
+}
+header{
+    font-weight: 800;
+    font-size:2rem;
+    border: 1px solid rgb(165, 109, 190);
+    margin:1rem .5rem;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    /* background-color: rgb(137, 76, 143);/ */
+}
+#form-container{
+    border: 1px solid green;
+    position: relative;
+    min-height: 90%;
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 1px;
+}
+#form{
+  /* position: relative; */
+  border: 1px solid black;
+  height: 100%;
+  min-width: 100%;
+}
+#input-div{
+    display: flex;
+    margin: 5px 5px 5px 5px;
+    padding-top: 10px;
+    flex-direction: column;
+}
+label{
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    /* padding-bottom: 10px; */
+}
+#tab{
+    border: 2px solid rgb(39, 37, 33);
+}
+table,td,tr,thead,tbody{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.hide{
+    display: none;
+}
+@media screen and (max-width:650px){
+    #app-div{
+        grid-template-columns: 1fr;
+    }
+}
