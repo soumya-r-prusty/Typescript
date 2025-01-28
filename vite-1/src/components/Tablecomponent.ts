@@ -21,7 +21,7 @@ export class TableComponent extends BaseComp{
     if(!TableComponent.instance){
       TableComponent.instance = new TableComponent(stateMan);
     }
-    
+
     return TableComponent.instance;
    }
 
@@ -45,6 +45,7 @@ export class TableComponent extends BaseComp{
                  <th>Email</th>
                  <th>Phone</th>
                </tr>
+               
              </tbody>
 
           </table>
